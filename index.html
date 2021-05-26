@@ -129,12 +129,12 @@
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">3</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">4</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">6</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">7</span></a>
 
   </li>
   </ul>
@@ -164,7 +164,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/05/25/Three-js%E5%92%8C%E6%96%87%E4%BB%B6%E5%A4%B9%E7%BB%93%E6%9E%84/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/05/25/git%E5%91%BD%E4%BB%A4%E6%95%99%E7%A8%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/tx.jpg">
@@ -178,7 +178,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/05/25/Three-js%E5%92%8C%E6%96%87%E4%BB%B6%E5%A4%B9%E7%BB%93%E6%9E%84/" class="post-title-link" itemprop="url">Three.js和文件夹结构</a>
+            <a href="/2021/05/25/git%E5%91%BD%E4%BB%A4%E6%95%99%E7%A8%8B/" class="post-title-link" itemprop="url">使用git上传本地文件到github仓库</a>
         </h2>
 
         <div class="post-meta">
@@ -187,17 +187,23 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-05-25 09:06:05 / 修改时间：09:39:57" itemprop="dateCreated datePublished" datetime="2021-05-25T09:06:05+08:00">2021-05-25</time>
+              <time title="创建时间：2021-05-25 16:37:13" itemprop="dateCreated datePublished" datetime="2021-05-25T16:37:13+08:00">2021-05-25</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-05-26 10:35:44" itemprop="dateModified" datetime="2021-05-26T10:35:44+08:00">2021-05-26</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/js/" itemprop="url" rel="index"><span itemprop="name">js</span></a>
+                  <a href="/categories/git%E5%91%BD%E4%BB%A4/" itemprop="url" rel="index"><span itemprop="name">git命令</span></a>
                 </span>
             </span>
 
@@ -212,25 +218,27 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <hr>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p> 最近学习这个three.js ，总是报错 大多都是引入的js的问题，和es6模块，下面是官网说明 然后一步一步根据说明 建文件结构 导入js就可以了</p>
-<h2 id="es6模块，three-js，和文件夹结构"><a href="#es6模块，three-js，和文件夹结构" class="headerlink" title="es6模块，three.js，和文件夹结构"></a>es6模块，three.js，和文件夹结构</h2><p>从r106版本开始，使用three.js的首选方式是通过<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import">es6模块。</a></p>
-<p>在一个脚本中，es6模块可以通过<code>import</code>关键字加载或者通过<code>&lt;script type=&quot;module&quot;&gt;</code>行内标签。这有一个两种方法都用的例子。</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;module&quot;</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript"><span class="keyword">import</span> * <span class="keyword">as</span> THREE <span class="keyword">from</span> <span class="string">&#x27;./resources/threejs/r127/build/three.module.js&#x27;</span>;</span></span><br></pre></td></tr></table></figure>
+          <h2 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h2><p>官网下载安装<a target="_blank" rel="noopener" href="https://git-scm.com/">https://git-scm.com/</a></p>
+<h2 id="本地文件上传到github仓库"><a href="#本地文件上传到github仓库" class="headerlink" title="本地文件上传到github仓库"></a>本地文件上传到github仓库</h2><p>1、接下来在本地创建一个文件夹，</p>
+<p>2、把github上面的仓库克隆到本地</p>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">clone</span>  <span class="title">https</span>://github.com/xxxxx.git（自己仓库地址）</span><br></pre></td></tr></table></figure>
+<p>3、把需要上传的文件拷贝到刚下载的新文件夹内</p>
+<p>4、git查看远程仓库地址</p>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git remote -v</span> </span><br></pre></td></tr></table></figure>
 
+<p>5、接下来依次输入以下代码即可完成其他剩余操作：</p>
+<figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git add . （注：别忘记后面的.，此操作是把Test文件夹下面的文件都添加进来）</span><br><span class="line"></span><br><span class="line">git commit -m “提交信息” （注：“提交信息”里面换成你需要，如“<span class="built_in">first</span> commit”）</span><br><span class="line"></span><br><span class="line">git <span class="built_in">push</span> -u <span class="built_in">origin</span> master （注：此操作目的是把本地仓库<span class="built_in">push</span>到github上面，此步骤需要你输入帐号和密码）</span><br></pre></td></tr></table></figure>
+<h2 id="github-访问-下载-上传-慢的issue"><a href="#github-访问-下载-上传-慢的issue" class="headerlink" title="github 访问 下载 上传 慢的issue"></a>github 访问 下载 上传 慢的issue</h2><ul>
+<li><p>修改本地host文件<br> 路径：<code>C:\Windows\System32\drivers\etc</code> 在文件中添加ip<br> 通过访问 <a target="_blank" rel="noopener" href="https://www.ipaddress.com/">https://www.ipaddress.com/</a><br> 这个网站来获取当前网络github最新的ip地址。</p>
+<p> 我找好久也不行网上复制的如下IP 速度还可以</p>
+</li>
+</ul>
+<figure class="highlight accesslog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">140.82.114.4</span>	github.com</span><br><span class="line"><span class="number">199.232.5.194</span>	github.global.ssl.fastly.net</span><br></pre></td></tr></table></figure>
 
-<p></script><br>路径必须是绝对或相对的。相对路径通常由<code>./</code>或者<code>../</code>开头，和其他标签不同如<code>&lt;img&gt;</code>和<code>&lt;a&gt;</code>.</p>
-<p>只要它们的绝对路径完全相同，对同一脚本的引用将只被加载一次。对于three.js这意味着它需要你把所有的实例的库放在正确的文件夹结构中。</p>
-<figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">someFolder</span><br><span class="line"> |<span class="string"></span></span><br><span class="line"><span class="string"> ├-build</span></span><br><span class="line"><span class="string"> </span>|<span class="string"> </span>|</span><br><span class="line"> |<span class="string"> +-three.module.js</span></span><br><span class="line"><span class="string"> </span>|</span><br><span class="line"> +-examples</span><br><span class="line">   |<span class="string"></span></span><br><span class="line"><span class="string">   +-jsm</span></span><br><span class="line"><span class="string">     </span>|</span><br><span class="line">     +-controls</span><br><span class="line">     |<span class="string"> </span>|</span><br><span class="line">     |<span class="string"> +-OrbitControls.js</span></span><br><span class="line"><span class="string">     </span>|<span class="string"> +-TrackballControls.js</span></span><br><span class="line"><span class="string">     </span>|<span class="string"> +-...</span></span><br><span class="line"><span class="string">     </span>|</span><br><span class="line">     +-loaders</span><br><span class="line">     |<span class="string"> </span>|</span><br><span class="line">     |<span class="string"> +-GLTFLoader.js</span></span><br><span class="line"><span class="string">     </span>|<span class="string"> +-...</span></span><br><span class="line"><span class="string">     </span>|</span><br><span class="line">     ...</span><br></pre></td></tr></table></figure>
-<p>之所以需要这种文件夹结构，是因为像 <code>OrbitControls.js</code>这样的示例中的脚本有一个复杂的相对路径，像下面这样</p>
-<figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> THREE <span class="keyword">from</span> <span class="string">&#x27;../../../build/three.module.js&#x27;</span>;</span><br></pre></td></tr></table></figure>
-
-<p>使用相同的结构保证了当你导入three和任一示例库时，它们都会引用同一个three.module.js文件。</p>
-<figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> THREE <span class="keyword">from</span> <span class="string">&#x27;./someFolder/build/three.module.js&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123;OrbitControls&#125; <span class="keyword">from</span> <span class="string">&#x27;./someFolder/examples/jsm/controls/OrbitControls.js&#x27;</span>;</span><br></pre></td></tr></table></figure>
-
-<p>在使用CDN时，是同样的道理。确保<code>three.modules.js</code>的路径以<code> /build/three.modules.js</code>结尾，比如</p>
-<figure class="highlight capnproto"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> THREE <span class="keyword">from</span> &#x27;https://unpkg.com/three<span class="symbol">@0</span>.<span class="number">108.0</span>/build/three.module.js&#x27;;</span><br><span class="line"><span class="keyword">import</span> &#123;OrbitControls&#125; <span class="keyword">from</span> &#x27;https://unpkg.com/three<span class="symbol">@0</span>.<span class="number">108.0</span>/examples/jsm/controls/OrbitControls.js&#x27;;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p>如果你偏向于旧式的<code>&lt;script src=&quot;path/to/three.js&quot;&gt;&lt;/script&gt;</code>样式，你可以查看<a target="_blank" rel="noopener" href="https://r105.threejsfundamentals.org/">这个网站的旧版本</a>。 Three.js的政策是不担心向后的兼容性。他们希望你使用特定的版本，就像希望你下载代码并把它放在你的项目中一样。当升级到较新的版本时，你可以阅读 <a target="_blank" rel="noopener" href="https://github.com/mrdoob/three.js/wiki/Migration-Guide">迁移指南</a> 看看你需要改变什么。如果要同时维护一个es6模块和一个类脚本版本的网站，那工作量就太大了，所以今后本网站将只显示es6模块样式。正如其他地方说过的那样，为了支持旧版浏览器，请考虑使用<a target="_blank" rel="noopener" href="https://babeljs.io/">转换器</a>。</p>
+<ul>
+<li>刷新Dns</li>
+</ul>
+<p>cmd运行 <code>ipconfig /flushdns</code></p>
 
       
     </div>
@@ -249,7 +257,7 @@
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -317,14 +325,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
