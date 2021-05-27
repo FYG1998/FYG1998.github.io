@@ -28,7 +28,7 @@
 <meta property="og:description" content="C#程序只允许运行一个实例 互斥进程(程序), 简单点说,就是在系统中只能有该程序的一个实例运行.  使用线程互斥变量. 通过定义互斥变量来判断是否已运行实例.C#实现如下: 123456789101112131415System.Threading.Mutex mutex; private void CheckExe()&amp;#123;    bool ret;    &#x2F;&#x2F;ElectronicNe">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-05-27T06:01:49.000Z">
-<meta property="article:modified_time" content="2021-05-27T06:27:47.995Z">
+<meta property="article:modified_time" content="2021-05-27T06:35:15.706Z">
 <meta property="article:author" content="FuYG">
 <meta property="article:tag" content="学习">
 <meta name="twitter:card" content="summary">
@@ -192,7 +192,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-05-27 14:01:49 / 修改时间：14:27:47" itemprop="dateCreated datePublished" datetime="2021-05-27T14:01:49+08:00">2021-05-27</time>
+              <time title="创建时间：2021-05-27 14:01:49 / 修改时间：14:35:15" itemprop="dateCreated datePublished" datetime="2021-05-27T14:01:49+08:00">2021-05-27</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -217,7 +217,8 @@
       
         <hr>
 <h2 id="C-程序只允许运行一个实例"><a href="#C-程序只允许运行一个实例" class="headerlink" title="C#程序只允许运行一个实例"></a>C#程序只允许运行一个实例</h2><p> 互斥进程(程序), 简单点说,就是在系统中只能有该程序的一个实例运行.</p>
-<p> 使用线程互斥变量. 通过定义互斥变量来判断是否已运行实例.C#实现如下:<br> <figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">System.Threading.Mutex mutex;</span><br><span class="line"></span><br><span class="line"> <span class="keyword">private</span> void <span class="constructor">CheckExe()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">bool</span> ret;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//ElectronicNeedleTherapySystem互斥体名称随便定义</span></span><br><span class="line">    mutex = <span class="keyword">new</span> System.Threading.<span class="constructor">Mutex(<span class="params">true</span>, <span class="string">&quot;ElectronicNeedleTherapySystem&quot;</span>, <span class="params">out</span> <span class="params">ret</span>)</span>;  </span><br><span class="line">    <span class="keyword">if</span> (!ret)</span><br><span class="line">    &#123;</span><br><span class="line">        MessageBox.<span class="constructor">Show(<span class="string">&quot;已有一个程序实例运行，请勿重新运行&quot;</span>)</span>;</span><br><span class="line">        Environment.<span class="constructor">Exit(0)</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure><br> 程序中通过语句:<br> <code>System.Threading.Mutex mutex = new System.Threading.Mutex(true, &quot;ElectronicNeedleTherapySystem&quot;, out ret)</code></p>
+<p> 使用线程互斥变量. 通过定义互斥变量来判断是否已运行实例.C#实现如下:<br> <figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">System.Threading.Mutex mutex;</span><br><span class="line"></span><br><span class="line"> <span class="keyword">private</span> void <span class="constructor">CheckExe()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">bool</span> ret;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//ElectronicNeedleTherapySystem互斥体名称随便定义</span></span><br><span class="line">    mutex = <span class="keyword">new</span> System.Threading.<span class="constructor">Mutex(<span class="params">true</span>, <span class="string">&quot;ElectronicNeedleTherapySystem&quot;</span>, <span class="params">out</span> <span class="params">ret</span>)</span>;  </span><br><span class="line">    <span class="keyword">if</span> (!ret)</span><br><span class="line">    &#123;</span><br><span class="line">        MessageBox.<span class="constructor">Show(<span class="string">&quot;已有一个程序实例运行，请勿重新运行&quot;</span>)</span>;</span><br><span class="line">        Environment.<span class="constructor">Exit(0)</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure><br> 程序中通过语句:</p>
+<p> <code>System.Threading.Mutex mutex = new System.Threading.Mutex(true, &quot;ElectronicNeedleTherapySystem&quot;, out ret)</code></p>
 <p>来申明一个互斥体变量<code>mutex</code>,其中<code>ElectronicNeedleTherapySystem</code>为互斥体名,布尔变量<code>ret</code>用来保存是否已经运行了该程序事例.</p>
 
     </div>
