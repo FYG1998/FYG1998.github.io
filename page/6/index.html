@@ -124,7 +124,7 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">3</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">4</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
@@ -134,7 +134,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">8</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">9</span></a>
 
   </li>
   </ul>
@@ -164,7 +164,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/05/20/NexT%E4%B8%BB%E9%A2%98%E8%83%8C%E6%99%AF/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/05/25/git%E5%91%BD%E4%BB%A4%E6%95%99%E7%A8%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/tx.jpg">
@@ -178,7 +178,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/05/20/NexT%E4%B8%BB%E9%A2%98%E8%83%8C%E6%99%AF/" class="post-title-link" itemprop="url">NexT主题背景插件</a>
+            <a href="/2021/05/25/git%E5%91%BD%E4%BB%A4%E6%95%99%E7%A8%8B/" class="post-title-link" itemprop="url">使用git上传本地文件到github仓库</a>
         </h2>
 
         <div class="post-meta">
@@ -188,14 +188,14 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2021-05-20 17:21:31" itemprop="dateCreated datePublished" datetime="2021-05-20T17:21:31+08:00">2021-05-20</time>
+              <time title="创建时间：2021-05-25 16:37:13" itemprop="dateCreated datePublished" datetime="2021-05-25T16:37:13+08:00">2021-05-25</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
                   <i class="far fa-calendar-check"></i>
                 </span>
                 <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-05-21 10:56:42" itemprop="dateModified" datetime="2021-05-21T10:56:42+08:00">2021-05-21</time>
+                <time title="修改时间：2021-05-26 10:35:44" itemprop="dateModified" datetime="2021-05-26T10:35:44+08:00">2021-05-26</time>
               </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -203,7 +203,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" itemprop="url" rel="index"><span itemprop="name">博客搭建</span></a>
+                  <a href="/categories/git%E5%91%BD%E4%BB%A4/" itemprop="url" rel="index"><span itemprop="name">git命令</span></a>
                 </span>
             </span>
 
@@ -218,18 +218,27 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="引用了一个Github上的-主题next画布嵌套-框架，下面是官方说明"><a href="#引用了一个Github上的-主题next画布嵌套-框架，下面是官方说明" class="headerlink" title="引用了一个Github上的 主题next画布嵌套 框架，下面是官方说明"></a>引用了一个Github上的 主题next画布嵌套 框架，下面是官方说明</h2><h1 id="Theme-NexT-Canvas-Nest-主题next画布嵌套"><a href="#Theme-NexT-Canvas-Nest-主题next画布嵌套" class="headerlink" title="Theme NexT Canvas Nest 主题next画布嵌套"></a>Theme NexT Canvas Nest 主题next画布嵌套</h1><p><img src="https://img.shields.io/badge/NexT-v7.3.0+-blue?style=flat-square" alt="Theme Version"></p>
-<p><a target="_blank" rel="noopener" href="https://github.com/hustcc/canvas-nest.js">canvas-nest.js</a> for <a target="_blank" rel="noopener" href="https://github.com/theme-next">NexT</a>.</p>
-<h2 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h2><h3 id="Step-1-rarr-Go-to-Hexo-dir"><a href="#Step-1-rarr-Go-to-Hexo-dir" class="headerlink" title="Step 1 &rarr; Go to Hexo dir"></a>Step 1 &rarr; Go to Hexo dir</h3><p>Change dir to <strong>Hexo</strong> directory. There must be <code>scaffolds</code>, <code>source</code>, <code>themes</code> and other directories:</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> hexo</span><br><span class="line">$ ls</span><br><span class="line">scaffolds  <span class="built_in">source</span>  themes  _config.yml  package.json</span><br></pre></td></tr></table></figure>
+          <h2 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h2><p>官网下载安装<a target="_blank" rel="noopener" href="https://git-scm.com/">https://git-scm.com/</a></p>
+<h2 id="本地文件上传到github仓库"><a href="#本地文件上传到github仓库" class="headerlink" title="本地文件上传到github仓库"></a>本地文件上传到github仓库</h2><p>1、接下来在本地创建一个文件夹，</p>
+<p>2、把github上面的仓库克隆到本地</p>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">clone</span>  <span class="title">https</span>://github.com/xxxxx.git（自己仓库地址）</span><br></pre></td></tr></table></figure>
+<p>3、把需要上传的文件拷贝到刚下载的新文件夹内</p>
+<p>4、git查看远程仓库地址</p>
+<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git remote -v</span> </span><br></pre></td></tr></table></figure>
 
-<h3 id="Step-2-rarr-Create-footer-swig"><a href="#Step-2-rarr-Create-footer-swig" class="headerlink" title="Step 2 &rarr; Create footer.swig"></a>Step 2 &rarr; Create <code>footer.swig</code></h3><p>Create a file named <code>footer.swig</code> in <code>hexo/source/_data</code> directory (create <code>_data</code> directory if it does not exist).</p>
-<p>Edit this file and add the following content:</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">color</span>=<span class="string">&quot;0,0,255&quot;</span> <span class="attr">opacity</span>=<span class="string">&quot;0.5&quot;</span> <span class="attr">zIndex</span>=<span class="string">&quot;-1&quot;</span> <span class="attr">count</span>=<span class="string">&quot;99&quot;</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>5、接下来依次输入以下代码即可完成其他剩余操作：</p>
+<figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git add . （注：别忘记后面的.，此操作是把Test文件夹下面的文件都添加进来）</span><br><span class="line"></span><br><span class="line">git commit -m “提交信息” （注：“提交信息”里面换成你需要，如“<span class="built_in">first</span> commit”）</span><br><span class="line"></span><br><span class="line">git <span class="built_in">push</span> -u <span class="built_in">origin</span> master （注：此操作目的是把本地仓库<span class="built_in">push</span>到github上面，此步骤需要你输入帐号和密码）</span><br></pre></td></tr></table></figure>
+<h2 id="github-访问-下载-上传-慢的issue"><a href="#github-访问-下载-上传-慢的issue" class="headerlink" title="github 访问 下载 上传 慢的issue"></a>github 访问 下载 上传 慢的issue</h2><ul>
+<li><p>修改本地host文件<br> 路径：<code>C:\Windows\System32\drivers\etc</code> 在文件中添加ip<br> 通过访问 <a target="_blank" rel="noopener" href="https://www.ipaddress.com/">https://www.ipaddress.com/</a><br> 这个网站来获取当前网络github最新的ip地址。</p>
+<p> 我找好久也不行网上复制的如下IP 速度还可以</p>
+</li>
+</ul>
+<figure class="highlight accesslog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">140.82.114.4</span>	github.com</span><br><span class="line"><span class="number">199.232.5.194</span>	github.global.ssl.fastly.net</span><br></pre></td></tr></table></figure>
 
-<p>You can customize these options.</p>
-<h3 id="Step-3-rarr-Set-it-up"><a href="#Step-3-rarr-Set-it-up" class="headerlink" title="Step 3 &rarr; Set it up"></a>Step 3 &rarr; Set it up</h3><p>In the NexT <code>_config.yml</code>, uncomment <code>footer</code> under the <code>custom_file_path</code> section.</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Define custom file paths.</span></span><br><span class="line"><span class="comment"># Create your custom files in site directory `source/_data` and uncomment needed files below.</span></span><br><span class="line"><span class="attr">custom_file_path:</span></span><br><span class="line">  <span class="comment">#head: source/_data/head.swig</span></span><br><span class="line">  <span class="comment">#header: source/_data/header.swig</span></span><br><span class="line">  <span class="comment">#sidebar: source/_data/sidebar.swig</span></span><br><span class="line">  <span class="comment">#postMeta: source/_data/post-meta.swig</span></span><br><span class="line">  <span class="comment">#postBodyEnd: source/_data/post-body-end.swig</span></span><br><span class="line">  <span class="attr">footer:</span> <span class="string">source/_data/footer.swig</span></span><br><span class="line">  <span class="comment">#bodyEnd: source/_data/body-end.swig</span></span><br><span class="line">  <span class="comment">#variable: source/_data/variables.styl</span></span><br><span class="line">  <span class="comment">#mixin: source/_data/mixins.styl</span></span><br><span class="line">  <span class="comment">#style: source/_data/styles.styl</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>刷新Dns</li>
+</ul>
+<p>cmd运行 <code>ipconfig /flushdns</code></p>
 
       
     </div>
@@ -248,7 +257,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/5/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/7/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <a class="extend prev" rel="prev" href="/page/5/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><a class="extend next" rel="next" href="/page/7/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -316,7 +325,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-count">9</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -329,7 +338,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>

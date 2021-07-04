@@ -124,7 +124,7 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">3</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">4</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
@@ -134,7 +134,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">8</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">9</span></a>
 
   </li>
   </ul>
@@ -164,7 +164,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/05/27/C-%E7%A8%8B%E5%BA%8F%E5%8F%AA%E5%85%81%E8%AE%B8%E8%BF%90%E8%A1%8C%E4%B8%80%E4%B8%AA%E5%AE%9E%E4%BE%8B/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/06/06/NexT%E4%B8%BB%E9%A2%98%E8%83%8C%E6%99%AF/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/tx.jpg">
@@ -178,7 +178,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/05/27/C-%E7%A8%8B%E5%BA%8F%E5%8F%AA%E5%85%81%E8%AE%B8%E8%BF%90%E8%A1%8C%E4%B8%80%E4%B8%AA%E5%AE%9E%E4%BE%8B/" class="post-title-link" itemprop="url">C#程序只允许运行一个实例</a>
+            <a href="/2021/06/06/NexT%E4%B8%BB%E9%A2%98%E8%83%8C%E6%99%AF/" class="post-title-link" itemprop="url">NexT主题背景插件</a>
         </h2>
 
         <div class="post-meta">
@@ -187,17 +187,23 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-05-27 14:01:49 / 修改时间：14:35:15" itemprop="dateCreated datePublished" datetime="2021-05-27T14:01:49+08:00">2021-05-27</time>
+              <time title="创建时间：2021-06-06 15:02:06" itemprop="dateCreated datePublished" datetime="2021-06-06T15:02:06+08:00">2021-06-06</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-05-21 10:56:42" itemprop="dateModified" datetime="2021-05-21T10:56:42+08:00">2021-05-21</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/C/" itemprop="url" rel="index"><span itemprop="name">C#</span></a>
+                  <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" itemprop="url" rel="index"><span itemprop="name">博客搭建</span></a>
                 </span>
             </span>
 
@@ -212,11 +218,18 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <hr>
-<h2 id="C-程序只允许运行一个实例"><a href="#C-程序只允许运行一个实例" class="headerlink" title="C#程序只允许运行一个实例"></a>C#程序只允许运行一个实例</h2><p> 互斥进程(程序), 简单点说,就是在系统中只能有该程序的一个实例运行.</p>
-<p> 使用线程互斥变量. 通过定义互斥变量来判断是否已运行实例.C#实现如下:<br> <figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">System.Threading.Mutex mutex;</span><br><span class="line"></span><br><span class="line"> <span class="keyword">private</span> void <span class="constructor">CheckExe()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">bool</span> ret;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//ElectronicNeedleTherapySystem互斥体名称随便定义</span></span><br><span class="line">    mutex = <span class="keyword">new</span> System.Threading.<span class="constructor">Mutex(<span class="params">true</span>, <span class="string">&quot;ElectronicNeedleTherapySystem&quot;</span>, <span class="params">out</span> <span class="params">ret</span>)</span>;  </span><br><span class="line">    <span class="keyword">if</span> (!ret)</span><br><span class="line">    &#123;</span><br><span class="line">        MessageBox.<span class="constructor">Show(<span class="string">&quot;已有一个程序实例运行，请勿重新运行&quot;</span>)</span>;</span><br><span class="line">        Environment.<span class="constructor">Exit(0)</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure><br> 程序中通过语句:</p>
-<p> <code>System.Threading.Mutex mutex = new System.Threading.Mutex(true, &quot;ElectronicNeedleTherapySystem&quot;, out ret)</code></p>
-<p>来申明一个互斥体变量<code>mutex</code>,其中<code>ElectronicNeedleTherapySystem</code>为互斥体名,布尔变量<code>ret</code>用来保存是否已经运行了该程序事例.</p>
+          <h2 id="引用了一个Github上的-主题next画布嵌套-框架，下面是官方说明"><a href="#引用了一个Github上的-主题next画布嵌套-框架，下面是官方说明" class="headerlink" title="引用了一个Github上的 主题next画布嵌套 框架，下面是官方说明"></a>引用了一个Github上的 主题next画布嵌套 框架，下面是官方说明</h2><h1 id="Theme-NexT-Canvas-Nest-主题next画布嵌套"><a href="#Theme-NexT-Canvas-Nest-主题next画布嵌套" class="headerlink" title="Theme NexT Canvas Nest 主题next画布嵌套"></a>Theme NexT Canvas Nest 主题next画布嵌套</h1><p><img src="https://img.shields.io/badge/NexT-v7.3.0+-blue?style=flat-square" alt="Theme Version"></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/hustcc/canvas-nest.js">canvas-nest.js</a> for <a target="_blank" rel="noopener" href="https://github.com/theme-next">NexT</a>.</p>
+<h2 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h2><h3 id="Step-1-rarr-Go-to-Hexo-dir"><a href="#Step-1-rarr-Go-to-Hexo-dir" class="headerlink" title="Step 1 &rarr; Go to Hexo dir"></a>Step 1 &rarr; Go to Hexo dir</h3><p>Change dir to <strong>Hexo</strong> directory. There must be <code>scaffolds</code>, <code>source</code>, <code>themes</code> and other directories:</p>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> hexo</span><br><span class="line">$ ls</span><br><span class="line">scaffolds  <span class="built_in">source</span>  themes  _config.yml  package.json</span><br></pre></td></tr></table></figure>
+
+<h3 id="Step-2-rarr-Create-footer-swig"><a href="#Step-2-rarr-Create-footer-swig" class="headerlink" title="Step 2 &rarr; Create footer.swig"></a>Step 2 &rarr; Create <code>footer.swig</code></h3><p>Create a file named <code>footer.swig</code> in <code>hexo/source/_data</code> directory (create <code>_data</code> directory if it does not exist).</p>
+<p>Edit this file and add the following content:</p>
+<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">color</span>=<span class="string">&quot;0,0,255&quot;</span> <span class="attr">opacity</span>=<span class="string">&quot;0.5&quot;</span> <span class="attr">zIndex</span>=<span class="string">&quot;-1&quot;</span> <span class="attr">count</span>=<span class="string">&quot;99&quot;</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>You can customize these options.</p>
+<h3 id="Step-3-rarr-Set-it-up"><a href="#Step-3-rarr-Set-it-up" class="headerlink" title="Step 3 &rarr; Set it up"></a>Step 3 &rarr; Set it up</h3><p>In the NexT <code>_config.yml</code>, uncomment <code>footer</code> under the <code>custom_file_path</code> section.</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Define custom file paths.</span></span><br><span class="line"><span class="comment"># Create your custom files in site directory `source/_data` and uncomment needed files below.</span></span><br><span class="line"><span class="attr">custom_file_path:</span></span><br><span class="line">  <span class="comment">#head: source/_data/head.swig</span></span><br><span class="line">  <span class="comment">#header: source/_data/header.swig</span></span><br><span class="line">  <span class="comment">#sidebar: source/_data/sidebar.swig</span></span><br><span class="line">  <span class="comment">#postMeta: source/_data/post-meta.swig</span></span><br><span class="line">  <span class="comment">#postBodyEnd: source/_data/post-body-end.swig</span></span><br><span class="line">  <span class="attr">footer:</span> <span class="string">source/_data/footer.swig</span></span><br><span class="line">  <span class="comment">#bodyEnd: source/_data/body-end.swig</span></span><br><span class="line">  <span class="comment">#variable: source/_data/variables.styl</span></span><br><span class="line">  <span class="comment">#mixin: source/_data/mixins.styl</span></span><br><span class="line">  <span class="comment">#style: source/_data/styles.styl</span></span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -235,7 +248,7 @@
 
   
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><a class="extend next" rel="next" href="/page/2/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -303,7 +316,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-count">9</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -316,7 +329,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>

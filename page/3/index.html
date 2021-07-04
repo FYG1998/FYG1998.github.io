@@ -124,7 +124,7 @@
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">3</span></a>
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">4</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
@@ -134,7 +134,7 @@
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">8</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">9</span></a>
 
   </li>
   </ul>
@@ -164,7 +164,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/05/25/Three-js%E5%92%8C%E6%96%87%E4%BB%B6%E5%A4%B9%E7%BB%93%E6%9E%84/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/06/06/about/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/tx.jpg">
@@ -178,7 +178,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/05/25/Three-js%E5%92%8C%E6%96%87%E4%BB%B6%E5%A4%B9%E7%BB%93%E6%9E%84/" class="post-title-link" itemprop="url">Three.js和文件夹结构</a>
+            <a href="/2021/06/06/about/" class="post-title-link" itemprop="url">About</a>
         </h2>
 
         <div class="post-meta">
@@ -187,17 +187,23 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-05-25 09:06:05 / 修改时间：16:40:10" itemprop="dateCreated datePublished" datetime="2021-05-25T09:06:05+08:00">2021-05-25</time>
+              <time title="创建时间：2021-06-06 15:02:06" itemprop="dateCreated datePublished" datetime="2021-06-06T15:02:06+08:00">2021-06-06</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-05-21 22:00:40" itemprop="dateModified" datetime="2021-05-21T22:00:40+08:00">2021-05-21</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/js/" itemprop="url" rel="index"><span itemprop="name">js</span></a>
+                  <a href="/categories/About-me/" itemprop="url" rel="index"><span itemprop="name">About me</span></a>
                 </span>
             </span>
 
@@ -212,24 +218,26 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <hr>
-<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p> 最近学习这个three.js ，总是报错 大多都是引入的js的问题，和es6模块，下面是官网说明 然后一步一步根据说明 建文件结构 导入js就可以了</p>
-<h2 id="es6模块，three-js，"><a href="#es6模块，three-js，" class="headerlink" title="es6模块，three.js，"></a>es6模块，three.js，</h2><p>从r106版本开始，使用three.js的首选方式是通过<a target="_blank" rel="noopener" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import">es6模块。</a></p>
-<p>在一个脚本中，es6模块可以通过<code>import</code>关键字加载或者通过<code>&lt;script type=&quot;module&quot;&gt;</code>行内标签。这有一个两种方法都用的例子。</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;module&quot;</span>&gt;</span><span class="javascript"></span></span><br><span class="line"><span class="javascript"><span class="keyword">import</span> * <span class="keyword">as</span> THREE <span class="keyword">from</span> <span class="string">&#x27;./resources/threejs/r127/build/three.module.js&#x27;</span>;</span></span><br><span class="line"><span class="javascript">...</span></span><br><span class="line"><span class="javascript"></span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-<p>路径必须是绝对或相对的。相对路径通常由<code>./</code>或者<code>../</code>开头，和其他标签不同如<code>&lt;img&gt;</code>和<code>&lt;a&gt;</code>.</p>
-<p>只要它们的绝对路径完全相同，对同一脚本的引用将只被加载一次。对于three.js这意味着它需要你把所有的实例的库放在正确的文件夹结构中。</p>
-<h2 id="和文件夹结构"><a href="#和文件夹结构" class="headerlink" title="和文件夹结构"></a>和文件夹结构</h2><figure class="highlight gherkin"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">someFolder</span><br><span class="line"> |<span class="string"></span></span><br><span class="line"><span class="string"> ├-build</span></span><br><span class="line"><span class="string"> </span>|<span class="string"> </span>|</span><br><span class="line"> |<span class="string"> +-three.module.js</span></span><br><span class="line"><span class="string"> </span>|</span><br><span class="line"> +-examples</span><br><span class="line">   |<span class="string"></span></span><br><span class="line"><span class="string">   +-jsm</span></span><br><span class="line"><span class="string">     </span>|</span><br><span class="line">     +-controls</span><br><span class="line">     |<span class="string"> </span>|</span><br><span class="line">     |<span class="string"> +-OrbitControls.js</span></span><br><span class="line"><span class="string">     </span>|<span class="string"> +-TrackballControls.js</span></span><br><span class="line"><span class="string">     </span>|<span class="string"> +-...</span></span><br><span class="line"><span class="string">     </span>|</span><br><span class="line">     +-loaders</span><br><span class="line">     |<span class="string"> </span>|</span><br><span class="line">     |<span class="string"> +-GLTFLoader.js</span></span><br><span class="line"><span class="string">     </span>|<span class="string"> +-...</span></span><br><span class="line"><span class="string">     </span>|</span><br><span class="line">     ...</span><br></pre></td></tr></table></figure>
-<p>之所以需要这种文件夹结构，是因为像 <code>OrbitControls.js</code>这样的示例中的脚本有一个复杂的相对路径，像下面这样</p>
-<figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> THREE <span class="keyword">from</span> <span class="string">&#x27;../../../build/three.module.js&#x27;</span>;</span><br></pre></td></tr></table></figure>
-
-<p>使用相同的结构保证了当你导入three和任一示例库时，它们都会引用同一个three.module.js文件。</p>
-<figure class="highlight clean"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> THREE <span class="keyword">from</span> <span class="string">&#x27;./someFolder/build/three.module.js&#x27;</span>;</span><br><span class="line"><span class="keyword">import</span> &#123;OrbitControls&#125; <span class="keyword">from</span> <span class="string">&#x27;./someFolder/examples/jsm/controls/OrbitControls.js&#x27;</span>;</span><br></pre></td></tr></table></figure>
-
-<p>在使用CDN时，是同样的道理。确保<code>three.modules.js</code>的路径以<code> /build/three.modules.js</code>结尾，比如</p>
-<figure class="highlight capnproto"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> * <span class="keyword">as</span> THREE <span class="keyword">from</span> &#x27;https://unpkg.com/three<span class="symbol">@0</span>.<span class="number">108.0</span>/build/three.module.js&#x27;;</span><br><span class="line"><span class="keyword">import</span> &#123;OrbitControls&#125; <span class="keyword">from</span> &#x27;https://unpkg.com/three<span class="symbol">@0</span>.<span class="number">108.0</span>/examples/jsm/controls/OrbitControls.js&#x27;;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<hr>
-<p>如果你偏向于旧式的<code>&lt;script src=&quot;path/to/three.js&quot;&gt;&lt;/script&gt;</code>样式，你可以查看<a target="_blank" rel="noopener" href="https://r105.threejsfundamentals.org/">这个网站的旧版本</a>。 Three.js的政策是不担心向后的兼容性。他们希望你使用特定的版本，就像希望你下载代码并把它放在你的项目中一样。当升级到较新的版本时，你可以阅读 <a target="_blank" rel="noopener" href="https://github.com/mrdoob/three.js/wiki/Migration-Guide">迁移指南</a> 看看你需要改变什么。如果要同时维护一个es6模块和一个类脚本版本的网站，那工作量就太大了，所以今后本网站将只显示es6模块样式。正如其他地方说过的那样，为了支持旧版浏览器，请考虑使用<a target="_blank" rel="noopener" href="https://babeljs.io/">转换器</a>。</p>
+          <h3 id="Hi-there-👋"><a href="#Hi-there-👋" class="headerlink" title="Hi there 👋"></a>Hi there 👋</h3><p><strong>About me</strong> 学过<code>java</code>,会点<code>C#</code> , 第一份工作 MES系统开发与维护;目前从事基于C#的工业程序开发,专注于解决工业网络间的复杂的数据通信问题，解决多个独立程序之间的数据通信，甚至是不同的操作系统，平台的网络通信问题，下至通信小软件，上位机软件，设备PLC通讯，上至ERP系统，生产管理系统，MES系统.✨ <em>通俗一点就是Control层,与设备通讯控制设备（西门子PLC），为上层提供接口</em> 😄😄✨,</p>
+<p>✨ <em>不要觉得菜，再某行业，某工作待久了你也很牛逼，这就是质的飞跃</em> ✨</p>
+<h2 id="编程导航-HTML-："><a href="#编程导航-HTML-：" class="headerlink" title="编程导航 HTML ："></a>编程导航 HTML ：</h2><ul>
+<li><code>常用工具导航</code><br><a target="_blank" rel="noopener" href="https://naiop.github.io/mindex/indextools.html">Tools：https://naiop.github.io/mindex/indextools.html</a></li>
+<li><code>404html</code><br><a target="_blank" rel="noopener" href="https://naiop.github.io/mindex/404.html">https://naiop.github.io/mindex/404.html</a></li>
+<li><code>three.js编写的3D 地球</code><br><a target="_blank" rel="noopener" href="https://naiop.github.io/mindex/threeworld.html">https://naiop.github.io/mindex/threeworld.html</a></li>
+<li><code>html-鼠标特效</code><br><a target="_blank" rel="noopener" href="https://naiop.github.io/mindex/mouse.html">https://naiop.github.io/mindex/mouse.html</a></li>
+</ul>
+<h2 id="Here-are-some-ideas"><a href="#Here-are-some-ideas" class="headerlink" title="Here are some ideas :"></a>Here are some ideas :</h2><ul>
+<li>🔭 Finding a soul mate is not as easy as it seems. </li>
+<li>🌱 我目前正在学习 …Android…C#…</li>
+<li>👯 我正在寻求志同道合伙伴一起交流学习 …</li>
+<li>🤔 平时偶尔也喜欢打打游戏，王者混混分啥的</li>
+<li>💬 量变达到质变,久而久之你就是大佬 …</li>
+<li>📫 How to reach me: </li>
+<li>😄 别人不懂我的菜</li>
+<li>⚡ Fun fact: 桌面上放着JAVA从菜鸟到鸵鸟，C＃从入门到放弃，MySQL从缩小库到跑路，哦还有一盆半死不活的绿萝，那是对防辐射的坚定信仰</li>
+<li>⭐座右铭:如果冬天来了，春天还会远吗</li>
+<li>🎵Favorites: <a target="_blank" rel="noopener" href="https://music.163.com/#/song?id=32507038">歌名:《演员》 演唱：薛之谦</a> *** <a target="_blank" rel="noopener" href="https://music.163.com/#/song?id=569213220">歌名:《像我这样的人》演唱：毛不易</a></li>
+</ul>
 
       
     </div>
@@ -248,7 +256,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/8/">8</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/">9</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -316,7 +324,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">8</span>
+          <span class="site-state-item-count">9</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -329,7 +337,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
