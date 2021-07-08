@@ -20,30 +20,33 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="量变达到质变,久而久之你就是大佬 ...">
-<meta property="og:type" content="website">
-<meta property="og:title" content="FuYGの博客">
-<meta property="og:url" content="http://example.com/page/2/index.html">
+  <meta name="description" content="C#中try catch finally  try-catch 块的用途是捕获并处理工作代码产生的异常。 某些异常可以在 catch 块中进行处理，问题得以解决并不再出现异常；但是，大多数情况下你唯一可做的是确保引发的异常是合理异常。  将预见可能引发异常的代码包含在try语句块中。  如果发生了异常，则转入catch的执行。 finally可以没有。无论有没有发生异常，它总会在这个异常处理结构">
+<meta property="og:type" content="article">
+<meta property="og:title" content="C#异常抛出">
+<meta property="og:url" content="http://example.com/2021/07/08/C#%E5%BC%82%E5%B8%B8%E6%8A%9B%E5%87%BA/index.html">
 <meta property="og:site_name" content="FuYGの博客">
-<meta property="og:description" content="量变达到质变,久而久之你就是大佬 ...">
+<meta property="og:description" content="C#中try catch finally  try-catch 块的用途是捕获并处理工作代码产生的异常。 某些异常可以在 catch 块中进行处理，问题得以解决并不再出现异常；但是，大多数情况下你唯一可做的是确保引发的异常是合理异常。  将预见可能引发异常的代码包含在try语句块中。  如果发生了异常，则转入catch的执行。 finally可以没有。无论有没有发生异常，它总会在这个异常处理结构">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2021-07-08T14:03:23.000Z">
+<meta property="article:modified_time" content="2021-07-08T14:08:37.895Z">
 <meta property="article:author" content="FuYG">
+<meta property="article:tag" content="学习">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/page/2/">
+<link rel="canonical" href="http://example.com/2021/07/08/C#%E5%BC%82%E5%B8%B8%E6%8A%9B%E5%87%BA/">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>FuYGの博客</title>
+  <title>C#异常抛出 | FuYGの博客</title>
   
 
 
@@ -158,13 +161,14 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
+
+    
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/06/06/NexT%E4%B8%BB%E9%A2%98%E8%83%8C%E6%99%AF/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/07/08/C#%E5%BC%82%E5%B8%B8%E6%8A%9B%E5%87%BA/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/tx.jpg">
@@ -176,10 +180,9 @@
       <meta itemprop="name" content="FuYGの博客">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2021/06/06/NexT%E4%B8%BB%E9%A2%98%E8%83%8C%E6%99%AF/" class="post-title-link" itemprop="url">NexT主题背景插件</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          C#异常抛出
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -187,23 +190,17 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-06-06 15:02:06" itemprop="dateCreated datePublished" datetime="2021-06-06T15:02:06+08:00">2021-06-06</time>
+              <time title="创建时间：2021-07-08 22:03:23 / 修改时间：22:08:37" itemprop="dateCreated datePublished" datetime="2021-07-08T22:03:23+08:00">2021-07-08</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-05-21 10:56:42" itemprop="dateModified" datetime="2021-05-21T10:56:42+08:00">2021-05-21</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" itemprop="url" rel="index"><span itemprop="name">博客搭建</span></a>
+                  <a href="/categories/C/" itemprop="url" rel="index"><span itemprop="name">C#</span></a>
                 </span>
             </span>
 
@@ -218,38 +215,42 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="引用了一个Github上的-主题next画布嵌套-框架，下面是官方说明"><a href="#引用了一个Github上的-主题next画布嵌套-框架，下面是官方说明" class="headerlink" title="引用了一个Github上的 主题next画布嵌套 框架，下面是官方说明"></a>引用了一个Github上的 主题next画布嵌套 框架，下面是官方说明</h2><h1 id="Theme-NexT-Canvas-Nest-主题next画布嵌套"><a href="#Theme-NexT-Canvas-Nest-主题next画布嵌套" class="headerlink" title="Theme NexT Canvas Nest 主题next画布嵌套"></a>Theme NexT Canvas Nest 主题next画布嵌套</h1><p><img src="https://img.shields.io/badge/NexT-v7.3.0+-blue?style=flat-square" alt="Theme Version"></p>
-<p><a target="_blank" rel="noopener" href="https://github.com/hustcc/canvas-nest.js">canvas-nest.js</a> for <a target="_blank" rel="noopener" href="https://github.com/theme-next">NexT</a>.</p>
-<h2 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h2><h3 id="Step-1-rarr-Go-to-Hexo-dir"><a href="#Step-1-rarr-Go-to-Hexo-dir" class="headerlink" title="Step 1 &rarr; Go to Hexo dir"></a>Step 1 &rarr; Go to Hexo dir</h3><p>Change dir to <strong>Hexo</strong> directory. There must be <code>scaffolds</code>, <code>source</code>, <code>themes</code> and other directories:</p>
-<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> hexo</span><br><span class="line">$ ls</span><br><span class="line">scaffolds  <span class="built_in">source</span>  themes  _config.yml  package.json</span><br></pre></td></tr></table></figure>
-
-<h3 id="Step-2-rarr-Create-footer-swig"><a href="#Step-2-rarr-Create-footer-swig" class="headerlink" title="Step 2 &rarr; Create footer.swig"></a>Step 2 &rarr; Create <code>footer.swig</code></h3><p>Create a file named <code>footer.swig</code> in <code>hexo/source/_data</code> directory (create <code>_data</code> directory if it does not exist).</p>
-<p>Edit this file and add the following content:</p>
-<figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">script</span> <span class="attr">color</span>=<span class="string">&quot;0,0,255&quot;</span> <span class="attr">opacity</span>=<span class="string">&quot;0.5&quot;</span> <span class="attr">zIndex</span>=<span class="string">&quot;-1&quot;</span> <span class="attr">count</span>=<span class="string">&quot;99&quot;</span> <span class="attr">src</span>=<span class="string">&quot;https://cdn.jsdelivr.net/npm/canvas-nest.js@1/dist/canvas-nest.js&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>You can customize these options.</p>
-<h3 id="Step-3-rarr-Set-it-up"><a href="#Step-3-rarr-Set-it-up" class="headerlink" title="Step 3 &rarr; Set it up"></a>Step 3 &rarr; Set it up</h3><p>In the NexT <code>_config.yml</code>, uncomment <code>footer</code> under the <code>custom_file_path</code> section.</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Define custom file paths.</span></span><br><span class="line"><span class="comment"># Create your custom files in site directory `source/_data` and uncomment needed files below.</span></span><br><span class="line"><span class="attr">custom_file_path:</span></span><br><span class="line">  <span class="comment">#head: source/_data/head.swig</span></span><br><span class="line">  <span class="comment">#header: source/_data/header.swig</span></span><br><span class="line">  <span class="comment">#sidebar: source/_data/sidebar.swig</span></span><br><span class="line">  <span class="comment">#postMeta: source/_data/post-meta.swig</span></span><br><span class="line">  <span class="comment">#postBodyEnd: source/_data/post-body-end.swig</span></span><br><span class="line">  <span class="attr">footer:</span> <span class="string">source/_data/footer.swig</span></span><br><span class="line">  <span class="comment">#bodyEnd: source/_data/body-end.swig</span></span><br><span class="line">  <span class="comment">#variable: source/_data/variables.styl</span></span><br><span class="line">  <span class="comment">#mixin: source/_data/mixins.styl</span></span><br><span class="line">  <span class="comment">#style: source/_data/styles.styl</span></span><br></pre></td></tr></table></figure>
-
-      
+        <hr>
+<h2 id="C-中try-catch-finally"><a href="#C-中try-catch-finally" class="headerlink" title="C#中try catch finally"></a>C#中try catch finally</h2><p>  try-catch 块的用途是捕获并处理工作代码产生的异常。 某些异常可以在 catch 块中进行处理，问题得以解决并不再出现异常；但是，大多数情况下你唯一可做的是确保引发的异常是合理异常。</p>
+<ul>
+<li>将预见可能引发异常的代码包含在try语句块中。 </li>
+<li>如果发生了异常，则转入catch的执行。</li>
+<li>finally可以没有。无论有没有发生异常，它总会在这个异常处理结构的最后运行。即使你在try块内用return返回了，在返回前，finally总是要执行，这以便让你有机会能够在异常处理最后做一些清理工作。如关闭数据库连接等等。</li>
+</ul>
+<figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">public <span class="built_in">bool</span> mTasktimer = <span class="literal">true</span>;</span><br><span class="line">      </span><br><span class="line">        <span class="keyword">private</span> void <span class="constructor">TaskTimer_One(<span class="params">object</span> <span class="params">sender</span>, System.Timers.ElapsedEventArgs <span class="params">e</span>)</span></span><br><span class="line">        &#123;</span><br><span class="line">            lock (<span class="keyword">new</span> <span class="keyword">object</span><span class="literal">()</span>)   <span class="comment">//加锁执行下面代码块，执行完让线程休眠5秒钟</span></span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">if</span> (mTasktimer)</span><br><span class="line">                &#123;</span><br><span class="line">                    </span><br><span class="line">                    <span class="keyword">try</span></span><br><span class="line">                    &#123;</span><br><span class="line">                        mTasktimer = <span class="literal">false</span>;</span><br><span class="line"></span><br><span class="line">                        <span class="module-access"><span class="module"><span class="identifier">LogExecute</span>.</span></span>logNet.<span class="constructor">WriteError(<span class="string">&quot;TaskTimer_Elapsed------try&quot;</span>)</span>; <span class="comment">//日志</span></span><br><span class="line"></span><br><span class="line">                    &#125;</span><br><span class="line">                    catch (Exception ex)</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="module-access"><span class="module"><span class="identifier">LogExecute</span>.</span></span>logNet.<span class="constructor">WriteError($<span class="string">&quot;程序出现异常，错误原因是&#123;ex.Message&#125;&quot;</span>)</span>;</span><br><span class="line"></span><br><span class="line">                        <span class="module-access"><span class="module"><span class="identifier">LogExecute</span>.</span></span>logNet.<span class="constructor">WriteError(<span class="string">&quot;TaskTimer_Elapsed------try---Exception&quot;</span>)</span>;  <span class="comment">//日志</span></span><br><span class="line">                    &#125;</span><br><span class="line">                    finally</span><br><span class="line">                    &#123;</span><br><span class="line"></span><br><span class="line">                        mTasktimer = <span class="literal">true</span>;</span><br><span class="line">                        Thread.<span class="constructor">Sleep(5000)</span>;</span><br><span class="line"></span><br><span class="line">                        <span class="module-access"><span class="module"><span class="identifier">LogExecute</span>.</span></span>logNet.<span class="constructor">WriteError(<span class="string">&quot;TaskTimer_Elapsed------try---finally&quot;</span>)</span>;  <span class="comment">//日志</span></span><br><span class="line">                        </span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//     lock语句：</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">//     lock 语句获取给定对象的互斥 lock，执行语句块，然后释放 lock。 持有 lock 时，持有 lock 的线程可以再次获取并释放 lock。 阻止任何其他线程获取 lock 并等待释放 lock。</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">//     C#中try catch finally 用法：</span></span><br><span class="line">    <span class="comment">//     try-catch 块的用途是捕获并处理工作代码产生的异常。 某些异常可以在 catch 块中进行处理，问题得以解决并不再出现异常；但是，大多数情况下你唯一可做的是确保引发的异常是合理异常。</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">//    1、将预见可能引发异常的代码包含在try语句块中。 2、如果发生了异常，则转入catch的执行。3.finally可以没有。无论有没有发生异常，它总会在这个异常处理结构的最后运行。即使你在try块内用return返回了，在返回前，finally总是要执行，这以便让你有机会能够在异常处理最后做一些清理工作。如关闭数据库连接等等。</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
+          <div class="post-tags">
+              <a href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag"> <i class="fa fa-tag"></i># 学习</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/06/06/NexT%E4%B8%BB%E9%A2%98%E8%83%8C%E6%99%AF/" rel="prev" title="NexT主题背景插件">
+      <i class="fa fa-chevron-left"></i> NexT主题背景插件
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
       </footer>
+    
   </article>
   
   
   
-
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
-  </nav>
 
 
 
@@ -301,6 +302,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#C-%E4%B8%ADtry-catch-finally"><span class="nav-number">1.</span> <span class="nav-text">C#中try catch finally</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
