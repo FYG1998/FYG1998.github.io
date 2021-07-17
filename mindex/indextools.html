@@ -35,8 +35,14 @@
 				font-size: 13px;
 				line-height: 1.846;
 				color: #666666;
-				background-color: #ffffff;
-				margin: 0
+				margin: 0;
+				/*background-color: #ffffff;*/
+				/*浏览器运行index.html页面，此时滚条拉动，页面内容能动，背景图片不动*/
+				background: url(http://api.eleuu.com/bz.php?type=1);
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-size: cover;
+				/* filter: blur(15px);/*为了模糊更明显，调高模糊度*/
 			}
 			/*屏幕宽度超过1200px 显示4个*/
 			
@@ -68,9 +74,12 @@
 			}
 			
 			.maple-tool-item {
-				background-color: #fff;
+				/*background-color: #fff;*/
+				/*方框阴影*/
+				box-shadow: 0px 0px 40px rgb(255 255 255 / 70%);
+				background: rgba(155, 155, 155, 0.7);
 				border-radius: 3px;
-				border: 1px solid #CCC;
+				border: 1px solid #DDD;
 				padding: 15px;
 			}
 			/*a标签下划线*/
@@ -152,7 +161,10 @@
 				padding-left: 10px;
 				height: 38px;
 				overflow: hidden;
-				color: #777777;
+				/*说明字体颜色*/
+				color: #000000;
+				/*字体重影*/
+				text-shadow: 0px 0px 4px rgb(6 6 6);
 				font-size: 12px;
 				line-height: 20px;
 			}
@@ -173,7 +185,7 @@
 				color: #7D8994;
 				margin-right: 2px;
 				margin-bottom: 20px;
-				background: #F1F1F1;
+				background: #ffffef;
 				border-radius: 12px;
 				cursor: pointer;
 			}
@@ -209,12 +221,13 @@
 			/*友情连接*/
 			
 			.links_ {
-				background-color: #FFF;
+				border-radius: 3px;
+				border: 1px solid #DDD;
+				box-shadow: 0px 0px 40px rgb(255 255 255 / 70%);
 				clear: both;
 				height: auto;
 				text-align: center;
 				padding: 0;
-				border: 1px solid #eaeaea;
 				margin-bottom: 12px;
 				position: relative;
 			}
@@ -222,12 +235,6 @@
 			.links_bt {
 				line-height: 50px;
 				height: 50px;
-				border-bottom-width: 1px;
-				border-bottom-style: solid;
-				border-bottom-color: #e8e8e8;
-				margin-right: auto;
-				margin-left: auto;
-				clear: both;
 			}
 			
 			.links_bt_right {
@@ -244,11 +251,13 @@
 			.footer {
 				text-align: center;
 				line-height: 25px;
-				color: #707682;
+				color: #050505b3;
 				margin-top: 0px;
 				padding: 10px;
-				border-top: 1px solid #E6E6EB;
-				background-color: #FBFBFB;
+				/*background-color: #FBFBFB;*/
+				border-radius: 3px;
+				border: 1px solid #DDD;
+				box-shadow: 0px 0px 40px rgb(255 255 255 / 70%);
 				position: relative;
 			}
 		</style>
@@ -540,6 +549,392 @@
 					</a>
 				</div>
 
+				<!--//test-->
+				<div class="col-lg-4 tool-item">
+					<a href="http://www.1ppt.com/moban/">
+						<div class="maple-tool-item image-shadow ">
+							<span class="maple-tool-icon maple-tool-item-color">PPT</span>
+							<h3 class="maple-tool-name ">第一ppt</h3>
+							<!--describe描述-->
+							<span class="maple-tool-describe ">PPT</span>
+
+							<div class="maple-tool-tags ">
+								<span class="maple-tool-tag " title="工具类型 ">PPT模板下载</span>
+								<span class="maple-tool-tag " title="工具说明 ">ppt下载</span>
+							</div>
+							<div style="overflow: hidden; "><span class="maple-tool-in " title="点击打开工具 "> Open</span></div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 tool-item">
+					<a href="http://www.1ppt.com/moban/">
+						<div class="maple-tool-item image-shadow ">
+							<span class="maple-tool-icon maple-tool-item-color">PPT</span>
+							<h3 class="maple-tool-name ">第一ppt</h3>
+							<!--describe描述-->
+							<span class="maple-tool-describe ">PPT</span>
+
+							<div class="maple-tool-tags ">
+								<span class="maple-tool-tag " title="工具类型 ">PPT模板下载</span>
+								<span class="maple-tool-tag " title="工具说明 ">ppt下载</span>
+							</div>
+							<div style="overflow: hidden; "><span class="maple-tool-in " title="点击打开工具 "> Open</span></div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 tool-item">
+					<a href="http://www.1ppt.com/moban/">
+						<div class="maple-tool-item image-shadow ">
+							<span class="maple-tool-icon maple-tool-item-color">PPT</span>
+							<h3 class="maple-tool-name ">第一ppt</h3>
+							<!--describe描述-->
+							<span class="maple-tool-describe ">PPT</span>
+
+							<div class="maple-tool-tags ">
+								<span class="maple-tool-tag " title="工具类型 ">PPT模板下载</span>
+								<span class="maple-tool-tag " title="工具说明 ">ppt下载</span>
+							</div>
+							<div style="overflow: hidden; "><span class="maple-tool-in " title="点击打开工具 "> Open</span></div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 tool-item">
+					<a href="http://www.1ppt.com/moban/">
+						<div class="maple-tool-item image-shadow ">
+							<span class="maple-tool-icon maple-tool-item-color">PPT</span>
+							<h3 class="maple-tool-name ">第一ppt</h3>
+							<!--describe描述-->
+							<span class="maple-tool-describe ">PPT</span>
+
+							<div class="maple-tool-tags ">
+								<span class="maple-tool-tag " title="工具类型 ">PPT模板下载</span>
+								<span class="maple-tool-tag " title="工具说明 ">ppt下载</span>
+							</div>
+							<div style="overflow: hidden; "><span class="maple-tool-in " title="点击打开工具 "> Open</span></div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 tool-item">
+					<a href="http://www.1ppt.com/moban/">
+						<div class="maple-tool-item image-shadow ">
+							<span class="maple-tool-icon maple-tool-item-color">PPT</span>
+							<h3 class="maple-tool-name ">第一ppt</h3>
+							<!--describe描述-->
+							<span class="maple-tool-describe ">PPT</span>
+
+							<div class="maple-tool-tags ">
+								<span class="maple-tool-tag " title="工具类型 ">PPT模板下载</span>
+								<span class="maple-tool-tag " title="工具说明 ">ppt下载</span>
+							</div>
+							<div style="overflow: hidden; "><span class="maple-tool-in " title="点击打开工具 "> Open</span></div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 tool-item">
+					<a href="http://www.1ppt.com/moban/">
+						<div class="maple-tool-item image-shadow ">
+							<span class="maple-tool-icon maple-tool-item-color">PPT</span>
+							<h3 class="maple-tool-name ">第一ppt</h3>
+							<!--describe描述-->
+							<span class="maple-tool-describe ">PPT</span>
+
+							<div class="maple-tool-tags ">
+								<span class="maple-tool-tag " title="工具类型 ">PPT模板下载</span>
+								<span class="maple-tool-tag " title="工具说明 ">ppt下载</span>
+							</div>
+							<div style="overflow: hidden; "><span class="maple-tool-in " title="点击打开工具 "> Open</span></div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 tool-item">
+					<a href="http://www.1ppt.com/moban/">
+						<div class="maple-tool-item image-shadow ">
+							<span class="maple-tool-icon maple-tool-item-color">PPT</span>
+							<h3 class="maple-tool-name ">第一ppt</h3>
+							<!--describe描述-->
+							<span class="maple-tool-describe ">PPT</span>
+
+							<div class="maple-tool-tags ">
+								<span class="maple-tool-tag " title="工具类型 ">PPT模板下载</span>
+								<span class="maple-tool-tag " title="工具说明 ">ppt下载</span>
+							</div>
+							<div style="overflow: hidden; "><span class="maple-tool-in " title="点击打开工具 "> Open</span></div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 tool-item">
+					<a href="http://www.1ppt.com/moban/">
+						<div class="maple-tool-item image-shadow ">
+							<span class="maple-tool-icon maple-tool-item-color">PPT</span>
+							<h3 class="maple-tool-name ">第一ppt</h3>
+							<!--describe描述-->
+							<span class="maple-tool-describe ">PPT</span>
+
+							<div class="maple-tool-tags ">
+								<span class="maple-tool-tag " title="工具类型 ">PPT模板下载</span>
+								<span class="maple-tool-tag " title="工具说明 ">ppt下载</span>
+							</div>
+							<div style="overflow: hidden; "><span class="maple-tool-in " title="点击打开工具 "> Open</span></div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 tool-item">
+					<a href="http://www.1ppt.com/moban/">
+						<div class="maple-tool-item image-shadow ">
+							<span class="maple-tool-icon maple-tool-item-color">PPT</span>
+							<h3 class="maple-tool-name ">第一ppt</h3>
+							<!--describe描述-->
+							<span class="maple-tool-describe ">PPT</span>
+
+							<div class="maple-tool-tags ">
+								<span class="maple-tool-tag " title="工具类型 ">PPT模板下载</span>
+								<span class="maple-tool-tag " title="工具说明 ">ppt下载</span>
+							</div>
+							<div style="overflow: hidden; "><span class="maple-tool-in " title="点击打开工具 "> Open</span></div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 tool-item">
+					<a href="http://www.1ppt.com/moban/">
+						<div class="maple-tool-item image-shadow ">
+							<span class="maple-tool-icon maple-tool-item-color">PPT</span>
+							<h3 class="maple-tool-name ">第一ppt</h3>
+							<!--describe描述-->
+							<span class="maple-tool-describe ">PPT</span>
+
+							<div class="maple-tool-tags ">
+								<span class="maple-tool-tag " title="工具类型 ">PPT模板下载</span>
+								<span class="maple-tool-tag " title="工具说明 ">ppt下载</span>
+							</div>
+							<div style="overflow: hidden; "><span class="maple-tool-in " title="点击打开工具 "> Open</span></div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 tool-item">
+					<a href="http://www.1ppt.com/moban/">
+						<div class="maple-tool-item image-shadow ">
+							<span class="maple-tool-icon maple-tool-item-color">PPT</span>
+							<h3 class="maple-tool-name ">第一ppt</h3>
+							<!--describe描述-->
+							<span class="maple-tool-describe ">PPT</span>
+
+							<div class="maple-tool-tags ">
+								<span class="maple-tool-tag " title="工具类型 ">PPT模板下载</span>
+								<span class="maple-tool-tag " title="工具说明 ">ppt下载</span>
+							</div>
+							<div style="overflow: hidden; "><span class="maple-tool-in " title="点击打开工具 "> Open</span></div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 tool-item">
+					<a href="http://www.1ppt.com/moban/">
+						<div class="maple-tool-item image-shadow ">
+							<span class="maple-tool-icon maple-tool-item-color">PPT</span>
+							<h3 class="maple-tool-name ">第一ppt</h3>
+							<!--describe描述-->
+							<span class="maple-tool-describe ">PPT</span>
+
+							<div class="maple-tool-tags ">
+								<span class="maple-tool-tag " title="工具类型 ">PPT模板下载</span>
+								<span class="maple-tool-tag " title="工具说明 ">ppt下载</span>
+							</div>
+							<div style="overflow: hidden; "><span class="maple-tool-in " title="点击打开工具 "> Open</span></div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 tool-item">
+					<a href="http://www.1ppt.com/moban/">
+						<div class="maple-tool-item image-shadow ">
+							<span class="maple-tool-icon maple-tool-item-color">PPT</span>
+							<h3 class="maple-tool-name ">第一ppt</h3>
+							<!--describe描述-->
+							<span class="maple-tool-describe ">PPT</span>
+
+							<div class="maple-tool-tags ">
+								<span class="maple-tool-tag " title="工具类型 ">PPT模板下载</span>
+								<span class="maple-tool-tag " title="工具说明 ">ppt下载</span>
+							</div>
+							<div style="overflow: hidden; "><span class="maple-tool-in " title="点击打开工具 "> Open</span></div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 tool-item">
+					<a href="http://www.1ppt.com/moban/">
+						<div class="maple-tool-item image-shadow ">
+							<span class="maple-tool-icon maple-tool-item-color">PPT</span>
+							<h3 class="maple-tool-name ">第一ppt</h3>
+							<!--describe描述-->
+							<span class="maple-tool-describe ">PPT</span>
+
+							<div class="maple-tool-tags ">
+								<span class="maple-tool-tag " title="工具类型 ">PPT模板下载</span>
+								<span class="maple-tool-tag " title="工具说明 ">ppt下载</span>
+							</div>
+							<div style="overflow: hidden; "><span class="maple-tool-in " title="点击打开工具 "> Open</span></div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 tool-item">
+					<a href="http://www.1ppt.com/moban/">
+						<div class="maple-tool-item image-shadow ">
+							<span class="maple-tool-icon maple-tool-item-color">PPT</span>
+							<h3 class="maple-tool-name ">第一ppt</h3>
+							<!--describe描述-->
+							<span class="maple-tool-describe ">PPT</span>
+
+							<div class="maple-tool-tags ">
+								<span class="maple-tool-tag " title="工具类型 ">PPT模板下载</span>
+								<span class="maple-tool-tag " title="工具说明 ">ppt下载</span>
+							</div>
+							<div style="overflow: hidden; "><span class="maple-tool-in " title="点击打开工具 "> Open</span></div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 tool-item">
+					<a href="http://www.1ppt.com/moban/">
+						<div class="maple-tool-item image-shadow ">
+							<span class="maple-tool-icon maple-tool-item-color">PPT</span>
+							<h3 class="maple-tool-name ">第一ppt</h3>
+							<!--describe描述-->
+							<span class="maple-tool-describe ">PPT</span>
+
+							<div class="maple-tool-tags ">
+								<span class="maple-tool-tag " title="工具类型 ">PPT模板下载</span>
+								<span class="maple-tool-tag " title="工具说明 ">ppt下载</span>
+							</div>
+							<div style="overflow: hidden; "><span class="maple-tool-in " title="点击打开工具 "> Open</span></div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 tool-item">
+					<a href="http://www.1ppt.com/moban/">
+						<div class="maple-tool-item image-shadow ">
+							<span class="maple-tool-icon maple-tool-item-color">PPT</span>
+							<h3 class="maple-tool-name ">第一ppt</h3>
+							<!--describe描述-->
+							<span class="maple-tool-describe ">PPT</span>
+
+							<div class="maple-tool-tags ">
+								<span class="maple-tool-tag " title="工具类型 ">PPT模板下载</span>
+								<span class="maple-tool-tag " title="工具说明 ">ppt下载</span>
+							</div>
+							<div style="overflow: hidden; "><span class="maple-tool-in " title="点击打开工具 "> Open</span></div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 tool-item">
+					<a href="http://www.1ppt.com/moban/">
+						<div class="maple-tool-item image-shadow ">
+							<span class="maple-tool-icon maple-tool-item-color">PPT</span>
+							<h3 class="maple-tool-name ">第一ppt</h3>
+							<!--describe描述-->
+							<span class="maple-tool-describe ">PPT</span>
+
+							<div class="maple-tool-tags ">
+								<span class="maple-tool-tag " title="工具类型 ">PPT模板下载</span>
+								<span class="maple-tool-tag " title="工具说明 ">ppt下载</span>
+							</div>
+							<div style="overflow: hidden; "><span class="maple-tool-in " title="点击打开工具 "> Open</span></div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 tool-item">
+					<a href="http://www.1ppt.com/moban/">
+						<div class="maple-tool-item image-shadow ">
+							<span class="maple-tool-icon maple-tool-item-color">PPT</span>
+							<h3 class="maple-tool-name ">第一ppt</h3>
+							<!--describe描述-->
+							<span class="maple-tool-describe ">PPT</span>
+
+							<div class="maple-tool-tags ">
+								<span class="maple-tool-tag " title="工具类型 ">PPT模板下载</span>
+								<span class="maple-tool-tag " title="工具说明 ">ppt下载</span>
+							</div>
+							<div style="overflow: hidden; "><span class="maple-tool-in " title="点击打开工具 "> Open</span></div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 tool-item">
+					<a href="http://www.1ppt.com/moban/">
+						<div class="maple-tool-item image-shadow ">
+							<span class="maple-tool-icon maple-tool-item-color">PPT</span>
+							<h3 class="maple-tool-name ">第一ppt</h3>
+							<!--describe描述-->
+							<span class="maple-tool-describe ">PPT</span>
+
+							<div class="maple-tool-tags ">
+								<span class="maple-tool-tag " title="工具类型 ">PPT模板下载</span>
+								<span class="maple-tool-tag " title="工具说明 ">ppt下载</span>
+							</div>
+							<div style="overflow: hidden; "><span class="maple-tool-in " title="点击打开工具 "> Open</span></div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 tool-item">
+					<a href="http://www.1ppt.com/moban/">
+						<div class="maple-tool-item image-shadow ">
+							<span class="maple-tool-icon maple-tool-item-color">PPT</span>
+							<h3 class="maple-tool-name ">第一ppt</h3>
+							<!--describe描述-->
+							<span class="maple-tool-describe ">PPT</span>
+
+							<div class="maple-tool-tags ">
+								<span class="maple-tool-tag " title="工具类型 ">PPT模板下载</span>
+								<span class="maple-tool-tag " title="工具说明 ">ppt下载</span>
+							</div>
+							<div style="overflow: hidden; "><span class="maple-tool-in " title="点击打开工具 "> Open</span></div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 tool-item">
+					<a href="http://www.1ppt.com/moban/">
+						<div class="maple-tool-item image-shadow ">
+							<span class="maple-tool-icon maple-tool-item-color">PPT</span>
+							<h3 class="maple-tool-name ">第一ppt</h3>
+							<!--describe描述-->
+							<span class="maple-tool-describe ">PPT</span>
+
+							<div class="maple-tool-tags ">
+								<span class="maple-tool-tag " title="工具类型 ">PPT模板下载</span>
+								<span class="maple-tool-tag " title="工具说明 ">ppt下载</span>
+							</div>
+							<div style="overflow: hidden; "><span class="maple-tool-in " title="点击打开工具 "> Open</span></div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 tool-item">
+					<a href="http://www.1ppt.com/moban/">
+						<div class="maple-tool-item image-shadow ">
+							<span class="maple-tool-icon maple-tool-item-color">PPT</span>
+							<h3 class="maple-tool-name ">第一ppt</h3>
+							<!--describe描述-->
+							<span class="maple-tool-describe ">PPT</span>
+
+							<div class="maple-tool-tags ">
+								<span class="maple-tool-tag " title="工具类型 ">PPT模板下载</span>
+								<span class="maple-tool-tag " title="工具说明 ">ppt下载</span>
+							</div>
+							<div style="overflow: hidden; "><span class="maple-tool-in " title="点击打开工具 "> Open</span></div>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 tool-item">
+					<a href="http://www.1ppt.com/moban/">
+						<div class="maple-tool-item image-shadow ">
+							<span class="maple-tool-icon maple-tool-item-color">PPT</span>
+							<h3 class="maple-tool-name ">第一ppt</h3>
+							<!--describe描述-->
+							<span class="maple-tool-describe ">PPT</span>
+
+							<div class="maple-tool-tags ">
+								<span class="maple-tool-tag " title="工具类型 ">PPT模板下载</span>
+								<span class="maple-tool-tag " title="工具说明 ">ppt下载</span>
+							</div>
+							<div style="overflow: hidden; "><span class="maple-tool-in " title="点击打开工具 "> Open</span></div>
+						</div>
+					</a>
+				</div>
+
 				<!-- //-------------------->
 			</div>
 
@@ -547,10 +942,10 @@
 			<div class="links_ ">
 				<div class="links_bt ">
 					<div class="links_bt_left ">
-						<a href="https://threejsfundamentals.org/threejs/lessons/zh_cn/threejs-fundamentals.html ">友情链接</a>
+						<a href="https://threejsfundamentals.org/threejs/lessons/zh_cn/threejs-fundamentals.html " style="text-shadow: 0px 0px 4px rgba(6, 6, 6,1); font-size:17px;">友情链接</a>
 					</div>
 					<div class="links_bt_right ">
-						<a href="https://FYG1998.github.io/threeworld.html " rel="nofollow " target="_blank ">threeD</a>
+						<a href="https://naiop.github.io/threeworld.html " rel="nofollow " target="_blank " style="text-shadow: 0px 0px 4px rgba(6, 6, 6,1); font-size:17px; ">threeD</a>
 					</div>
 				</div>
 			</div>
@@ -564,6 +959,7 @@
 			</footer>
 
 		</div>
+
 	</body>
 
 </html>
