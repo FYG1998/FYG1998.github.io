@@ -130,12 +130,12 @@
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">5</span></a>
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">6</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">10</span></a>
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">11</span></a>
 
   </li>
   </ul>
@@ -165,7 +165,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/05/25/git%E5%91%BD%E4%BB%A4%E6%95%99%E7%A8%8B/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/05/27/C-%E7%A8%8B%E5%BA%8F%E5%8F%AA%E5%85%81%E8%AE%B8%E8%BF%90%E8%A1%8C%E4%B8%80%E4%B8%AA%E5%AE%9E%E4%BE%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/tx.jpg">
@@ -179,7 +179,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/05/25/git%E5%91%BD%E4%BB%A4%E6%95%99%E7%A8%8B/" class="post-title-link" itemprop="url">使用git上传本地文件到github仓库</a>
+            <a href="/2021/05/27/C-%E7%A8%8B%E5%BA%8F%E5%8F%AA%E5%85%81%E8%AE%B8%E8%BF%90%E8%A1%8C%E4%B8%80%E4%B8%AA%E5%AE%9E%E4%BE%8B/" class="post-title-link" itemprop="url">C#程序只允许运行一个实例</a>
         </h2>
 
         <div class="post-meta">
@@ -188,23 +188,17 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
+              
 
-              <time title="创建时间：2021-05-25 16:37:13" itemprop="dateCreated datePublished" datetime="2021-05-25T16:37:13+08:00">2021-05-25</time>
+              <time title="创建时间：2021-05-27 14:01:49 / 修改时间：14:35:15" itemprop="dateCreated datePublished" datetime="2021-05-27T14:01:49+08:00">2021-05-27</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-07-10 21:49:39" itemprop="dateModified" datetime="2021-07-10T21:49:39+08:00">2021-07-10</time>
-              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/git%E5%91%BD%E4%BB%A4/" itemprop="url" rel="index"><span itemprop="name">git命令</span></a>
+                  <a href="/categories/C/" itemprop="url" rel="index"><span itemprop="name">C#</span></a>
                 </span>
             </span>
 
@@ -219,27 +213,11 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <h2 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h2><p>官网下载安装<a target="_blank" rel="noopener" href="https://git-scm.com/">https://git-scm.com/</a></p>
-<h2 id="本地文件上传到github仓库"><a href="#本地文件上传到github仓库" class="headerlink" title="本地文件上传到github仓库"></a>本地文件上传到github仓库</h2><p>1、接下来在本地创建一个文件夹，</p>
-<p>2、把github上面的仓库克隆到本地</p>
-<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">clone</span>  <span class="title">https</span>://github.com/xxxxx.git（自己仓库地址）</span><br></pre></td></tr></table></figure>
-<p>3、把需要上传的文件拷贝到刚下载的新文件夹内</p>
-<p>4、git查看远程仓库地址</p>
-<figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">git remote -v</span> </span><br></pre></td></tr></table></figure>
-
-<p>5、接下来依次输入以下代码即可完成其他剩余操作：</p>
-<figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git add . （注：别忘记后面的 .  注意git 目录）</span><br><span class="line"></span><br><span class="line">git commit -m “提交信息” （注：“提交信息”里面换成你需要，如“<span class="built_in">first</span> commit”）</span><br><span class="line"></span><br><span class="line">git <span class="built_in">push</span> -u <span class="built_in">origin</span> master （注：此操作目的是把本地仓库<span class="built_in">push</span>到github上面，此步骤需要你输入帐号和密码）</span><br></pre></td></tr></table></figure>
-<h2 id="github-访问-下载-上传-慢的issue"><a href="#github-访问-下载-上传-慢的issue" class="headerlink" title="github 访问 下载 上传 慢的issue"></a>github 访问 下载 上传 慢的issue</h2><ul>
-<li><p>修改本地host文件<br> 路径：<code>C:\Windows\System32\drivers\etc</code> 在文件中添加ip<br> 通过访问 <a target="_blank" rel="noopener" href="https://www.ipaddress.com/">https://www.ipaddress.com/</a><br> 这个网站来获取当前网络github最新的ip地址。</p>
-<p> 我找好久也不行网上复制的如下IP 速度还可以</p>
-</li>
-</ul>
-<figure class="highlight accesslog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">140.82.114.4</span>	github.com</span><br><span class="line"><span class="number">199.232.5.194</span>	github.global.ssl.fastly.net</span><br></pre></td></tr></table></figure>
-
-<ul>
-<li>刷新Dns</li>
-</ul>
-<p>cmd运行 <code>ipconfig /flushdns</code></p>
+          <hr>
+<h2 id="C-程序只允许运行一个实例"><a href="#C-程序只允许运行一个实例" class="headerlink" title="C#程序只允许运行一个实例"></a>C#程序只允许运行一个实例</h2><p> 互斥进程(程序), 简单点说,就是在系统中只能有该程序的一个实例运行.</p>
+<p> 使用线程互斥变量. 通过定义互斥变量来判断是否已运行实例.C#实现如下:<br> <figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">System.Threading.Mutex mutex;</span><br><span class="line"></span><br><span class="line"> <span class="keyword">private</span> void <span class="constructor">CheckExe()</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">bool</span> ret;</span><br><span class="line"></span><br><span class="line">    <span class="comment">//ElectronicNeedleTherapySystem互斥体名称随便定义</span></span><br><span class="line">    mutex = <span class="keyword">new</span> System.Threading.<span class="constructor">Mutex(<span class="params">true</span>, <span class="string">&quot;ElectronicNeedleTherapySystem&quot;</span>, <span class="params">out</span> <span class="params">ret</span>)</span>;  </span><br><span class="line">    <span class="keyword">if</span> (!ret)</span><br><span class="line">    &#123;</span><br><span class="line">        MessageBox.<span class="constructor">Show(<span class="string">&quot;已有一个程序实例运行，请勿重新运行&quot;</span>)</span>;</span><br><span class="line">        Environment.<span class="constructor">Exit(0)</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure><br> 程序中通过语句:</p>
+<p> <code>System.Threading.Mutex mutex = new System.Threading.Mutex(true, &quot;ElectronicNeedleTherapySystem&quot;, out ret)</code></p>
+<p>来申明一个互斥体变量<code>mutex</code>,其中<code>ElectronicNeedleTherapySystem</code>为互斥体名,布尔变量<code>ret</code>用来保存是否已经运行了该程序事例.</p>
 
       
     </div>
@@ -258,7 +236,7 @@
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/6/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><span class="page-number current">7</span><a class="page-number" href="/page/8/">8</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><a class="extend next" rel="next" href="/page/8/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <a class="extend prev" rel="prev" href="/page/6/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><span class="page-number current">7</span><a class="page-number" href="/page/8/">8</a><span class="space">&hellip;</span><a class="page-number" href="/page/11/">11</a><a class="extend next" rel="next" href="/page/8/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 
@@ -326,14 +304,14 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-count">11</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
