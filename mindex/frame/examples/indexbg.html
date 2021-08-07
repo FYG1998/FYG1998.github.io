@@ -11,6 +11,9 @@
 			}
 		
 			#c {
+				 position: fixed;
+                left: 0;
+                 top: 0;
 				width: 100%;
 				height: 100%;
 				display: block;
@@ -24,9 +27,7 @@
 			
 			import * as THREE from '../build/three.module.js';
 			import {OrbitControls} from './jsm/controls/OrbitControls.js';
-
-
-import { GLTFLoader } from './jsm/loaders/GLTFLoader.js';
+			import { GLTFLoader } from './jsm/loaders/GLTFLoader.js';
 
 function main() {
   const canvas = document.querySelector('#c');
@@ -211,6 +212,9 @@ function main() {
 
   requestAnimationFrame(render);
 }
+
+
+
 
 main();
 </script>
