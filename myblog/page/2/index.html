@@ -165,7 +165,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/08/27/Hexo/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/08/05/WebApi%E7%9A%84%E5%88%9B%E5%BB%BA%E5%92%8C%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/tx.jpg">
@@ -179,7 +179,7 @@
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
           
-            <a href="/2021/08/27/Hexo/" class="post-title-link" itemprop="url">Hello Hexo</a>
+            <a href="/2021/08/05/WebApi%E7%9A%84%E5%88%9B%E5%BB%BA%E5%92%8C%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0/" class="post-title-link" itemprop="url">WebApi的创建和简单实现</a>
         </h2>
 
         <div class="post-meta">
@@ -190,7 +190,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-08-27 19:57:10 / 修改时间：20:24:29" itemprop="dateCreated datePublished" datetime="2021-08-27T19:57:10+08:00">2021-08-27</time>
+              <time title="创建时间：2021-08-05 19:22:53 / 修改时间：20:09:24" itemprop="dateCreated datePublished" datetime="2021-08-05T19:22:53+08:00">2021-08-05</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -198,7 +198,7 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/" itemprop="url" rel="index"><span itemprop="name">博客搭建</span></a>
+                  <a href="/categories/C/" itemprop="url" rel="index"><span itemprop="name">C#</span></a>
                 </span>
             </span>
 
@@ -213,21 +213,23 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p>欢迎来到 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! 这是你的第一篇文章。检查 <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> 更多信息。如果您在使用Hexo时遇到任何问题，您可以在中找到答案 <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a>  或者你可以在<a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="快速启动"><a href="#快速启动" class="headerlink" title="快速启动"></a>快速启动</h2><h3 id="创建新帖子"><a href="#创建新帖子" class="headerlink" title="创建新帖子"></a>创建新帖子</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+          <p>WebApi的创建和简单实现</p>
+<h3 id="WebApi"><a href="#WebApi" class="headerlink" title="WebApi"></a>WebApi</h3><p>对接各种客户端（浏览器，移动设备），构建http服务的框架<br>部署在IIS中给外部应用提供数据，方便管理可控前后端分离</p>
+<h4 id="创建WebApi"><a href="#创建WebApi" class="headerlink" title="创建WebApi"></a>创建WebApi</h4><p>开发环境：vs2019.<br> 创建项目<br><img  src="https://naiop.github.io/mimages/blog/WebAPI_img1.png"  /></p>
+<p>点击创建<br><img  src="https://naiop.github.io/mimages/blog/WebAPI_img2.png"  /></p>
+<p>选择Web API 创建<br><img  src="https://naiop.github.io/mimages/blog/WebAPI_img3.png"  /></p>
+<p>点击运行可以看到默认已经创建了几个API 接口<br><img  src="https://naiop.github.io/mimages/blog/WebAPI_img4.png"  /></p>
+<h4 id="按需求创建API"><a href="#按需求创建API" class="headerlink" title="按需求创建API"></a>按需求创建API</h4><p>1创建实体类<br><img  src="https://naiop.github.io/mimages/blog/WebAPI_img5.png"  /></p>
+<p>2创建控制器<br><img  src="https://naiop.github.io/mimages/blog/WebAPI_img6.png"  /></p>
+<img  src="https://naiop.github.io/mimages/blog/WebAPI_img7.png"  />
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="运行服务器"><a href="#运行服务器" class="headerlink" title="运行服务器"></a>运行服务器</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>代码</p>
+<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">public</span> <span class="keyword">class</span> testController : ApiController</span><br><span class="line">&#123;</span><br><span class="line">    entity[] contacts = <span class="built_in">new</span> entity[] &#123;</span><br><span class="line">            <span class="built_in">new</span> entity()&#123; id=<span class="number">10001</span>,<span class="type">name</span>=&quot;设备1&quot;,  status=&quot;1&quot;,  <span class="keyword">explain</span>=&quot;1开启0关闭&quot;&#125;,</span><br><span class="line">            <span class="built_in">new</span> entity()&#123; id=<span class="number">10002</span>,<span class="type">name</span>=&quot;设备2&quot;,  status=&quot;1&quot;,  <span class="keyword">explain</span>=&quot;1开启0关闭&quot;&#125;,</span><br><span class="line">            <span class="built_in">new</span> entity()&#123; id=<span class="number">10003</span>,<span class="type">name</span>=&quot;设备3&quot;,  status=&quot;1&quot;,  <span class="keyword">explain</span>=&quot;1开启0关闭&quot;&#125;,</span><br><span class="line">            <span class="built_in">new</span> entity()&#123; id=<span class="number">10004</span>,<span class="type">name</span>=&quot;设备4&quot;,  status=&quot;0&quot;,  <span class="keyword">explain</span>=&quot;1开启0关闭&quot;&#125;</span><br><span class="line">        &#125;;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">public</span> IEnumerable&lt;entity&gt; GetListAll()</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> contacts;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">public</span> entity PostContactByID(<span class="type">int</span> id)</span><br><span class="line">    &#123;</span><br><span class="line">        entity entity = contacts.FirstOrDefault&lt;entity&gt;(item =&gt; item.id == id);</span><br><span class="line">        <span class="keyword">if</span> (entity == <span class="keyword">null</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            throw <span class="built_in">new</span> HttpResponseException(HttpStatusCode.NotFound);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> entity;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="删除public-文件"><a href="#删除public-文件" class="headerlink" title="删除public 文件"></a>删除public 文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br></pre></td></tr></table></figure>
+<p>运行程序  用postman 请求就可以看到返回的值<br><img  src="https://naiop.github.io/mimages/blog/WebAPI_img8.png"  /></p>
+<img  src="https://naiop.github.io/mimages/blog/WebAPI_img9.png"  />
 
-<h3 id="生成静态文件"><a href="#生成静态文件" class="headerlink" title="生成静态文件"></a>生成静态文件</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="部署到远程站点"><a href="#部署到远程站点" class="headerlink" title="部署到远程站点"></a>部署到远程站点</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>到这简单的 一个webApi 就成功了</p>
 
       
     </div>
