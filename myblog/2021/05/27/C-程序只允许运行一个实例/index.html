@@ -5,36 +5,35 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
 <meta name="theme-color" content="#222">
 <meta name="generator" content="Hexo 5.4.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <link rel="apple-touch-icon" sizes="180x180" href="/myblog/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/myblog/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/myblog/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/myblog/images/logo.svg" color="#222">
   <meta name="baidu-site-verification" content="code-6TRYJNN5Nq">
 
-<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="/myblog/css/main.css">
 
 
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+<link rel="stylesheet" href="/myblog/lib/font-awesome/css/all.min.css">
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"naiop.github.io","root":"/myblog/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
   <meta name="description" content="C#程序只允许运行一个实例 互斥进程(程序), 简单点说,就是在系统中只能有该程序的一个实例运行.  使用线程互斥变量. 通过定义互斥变量来判断是否已运行实例.C#实现如下: 123456789101112131415System.Threading.Mutex mutex; private void CheckExe()&amp;#123;    bool ret;    &#x2F;&#x2F;ElectronicNe">
 <meta property="og:type" content="article">
 <meta property="og:title" content="C#程序只允许运行一个实例">
-<meta property="og:url" content="http://example.com/2021/05/27/C-%E7%A8%8B%E5%BA%8F%E5%8F%AA%E5%85%81%E8%AE%B8%E8%BF%90%E8%A1%8C%E4%B8%80%E4%B8%AA%E5%AE%9E%E4%BE%8B/index.html">
+<meta property="og:url" content="https://naiop.github.io/myblog/2021/05/27/C-%E7%A8%8B%E5%BA%8F%E5%8F%AA%E5%85%81%E8%AE%B8%E8%BF%90%E8%A1%8C%E4%B8%80%E4%B8%AA%E5%AE%9E%E4%BE%8B/index.html">
 <meta property="og:site_name" content="FuYGの博客">
 <meta property="og:description" content="C#程序只允许运行一个实例 互斥进程(程序), 简单点说,就是在系统中只能有该程序的一个实例运行.  使用线程互斥变量. 通过定义互斥变量来判断是否已运行实例.C#实现如下: 123456789101112131415System.Threading.Mutex mutex; private void CheckExe()&amp;#123;    bool ret;    &#x2F;&#x2F;ElectronicNe">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-05-27T06:01:49.000Z">
-<meta property="article:modified_time" content="2021-05-27T06:35:15.000Z">
 <meta property="article:author" content="FuYG">
 <meta property="article:tag" content="学习">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://example.com/2021/05/27/C-%E7%A8%8B%E5%BA%8F%E5%8F%AA%E5%85%81%E8%AE%B8%E8%BF%90%E8%A1%8C%E4%B8%80%E4%B8%AA%E5%AE%9E%E4%BE%8B/">
+<link rel="canonical" href="https://naiop.github.io/myblog/2021/05/27/C-%E7%A8%8B%E5%BA%8F%E5%8F%AA%E5%85%81%E8%AE%B8%E8%BF%90%E8%A1%8C%E4%B8%80%E4%B8%AA%E5%AE%9E%E4%BE%8B/">
 
 
 <script id="page-configurations">
@@ -97,7 +96,7 @@
 
   <div class="site-meta">
 
-    <a href="/" class="brand" rel="start">
+    <a href="/myblog/" class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
       <h1 class="site-title">FuYGの博客</h1>
       <span class="logo-line-after"><i></i></span>
@@ -118,27 +117,27 @@
   <ul id="menu" class="main-menu menu">
         <li class="menu-item menu-item-home">
 
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+    <a href="/myblog/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
 
   </li>
         <li class="menu-item menu-item-about">
 
-    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+    <a href="/myblog/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
 
   </li>
         <li class="menu-item menu-item-tags">
 
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">3</span></a>
+    <a href="/myblog/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">3</span></a>
 
   </li>
         <li class="menu-item menu-item-categories">
 
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">6</span></a>
+    <a href="/myblog/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">6</span></a>
 
   </li>
         <li class="menu-item menu-item-archives">
 
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">15</span></a>
+    <a href="/myblog/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">15</span></a>
 
   </li>
   </ul>
@@ -169,10 +168,10 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/05/27/C-%E7%A8%8B%E5%BA%8F%E5%8F%AA%E5%85%81%E8%AE%B8%E8%BF%90%E8%A1%8C%E4%B8%80%E4%B8%AA%E5%AE%9E%E4%BE%8B/">
+    <link itemprop="mainEntityOfPage" href="https://naiop.github.io/myblog/2021/05/27/C-%E7%A8%8B%E5%BA%8F%E5%8F%AA%E5%85%81%E8%AE%B8%E8%BF%90%E8%A1%8C%E4%B8%80%E4%B8%AA%E5%AE%9E%E4%BE%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/tx.jpg">
+      <meta itemprop="image" content="/myblog/images/tx.jpg">
       <meta itemprop="name" content="FuYG">
       <meta itemprop="description" content="量变达到质变,久而久之你就是大佬 ...">
     </span>
@@ -191,17 +190,23 @@
                 <i class="far fa-calendar"></i>
               </span>
               <span class="post-meta-item-text">发表于</span>
-              
 
-              <time title="创建时间：2021-05-27 14:01:49 / 修改时间：14:35:15" itemprop="dateCreated datePublished" datetime="2021-05-27T14:01:49+08:00">2021-05-27</time>
+              <time title="创建时间：2021-05-27 14:01:49" itemprop="dateCreated datePublished" datetime="2021-05-27T14:01:49+08:00">2021-05-27</time>
             </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-08-27 21:22:53" itemprop="dateModified" datetime="2021-08-27T21:22:53+08:00">2021-08-27</time>
+              </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
                 <i class="far fa-folder"></i>
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/C/" itemprop="url" rel="index"><span itemprop="name">C#</span></a>
+                  <a href="/myblog/categories/C/" itemprop="url" rel="index"><span itemprop="name">C#</span></a>
                 </span>
             </span>
 
@@ -230,7 +235,7 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E5%AD%A6%E4%B9%A0/" rel="tag"> <i class="fa fa-tag"></i># 学习</a>
+              <a href="/myblog/tags/%E5%AD%A6%E4%B9%A0/" rel="tag"> <i class="fa fa-tag"></i># 学习</a>
           </div>
 
         
@@ -239,11 +244,11 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021/05/25/git%E5%91%BD%E4%BB%A4%E6%95%99%E7%A8%8B/" rel="prev" title="使用git上传本地文件到github仓库">
+    <a href="/myblog/2021/05/25/git%E5%91%BD%E4%BB%A4%E6%95%99%E7%A8%8B/" rel="prev" title="使用git上传本地文件到github仓库">
       <i class="fa fa-chevron-left"></i> 使用git上传本地文件到github仓库
     </a></div>
       <div class="post-nav-item">
-    <a href="/2021/05/28/%E7%A8%8B%E5%BA%8F%E5%91%98/" rel="next" title="程序员">
+    <a href="/myblog/2021/05/28/%E7%A8%8B%E5%BA%8F%E5%91%98/" rel="next" title="程序员">
       程序员 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
@@ -311,27 +316,27 @@
       <div class="site-overview-wrap sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image" alt="FuYG"
-      src="/images/tx.jpg">
+      src="/myblog/images/tx.jpg">
   <p class="site-author-name" itemprop="name">FuYG</p>
   <div class="site-description" itemprop="description">量变达到质变,久而久之你就是大佬 ...</div>
 </div>
 <div class="site-state-wrap motion-element">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
-          <a href="/archives/">
+          <a href="/myblog/archives/">
         
           <span class="site-state-item-count">15</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
-            <a href="/categories/">
+            <a href="/myblog/categories/">
           
         <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
-            <a href="/tags/">
+            <a href="/myblog/tags/">
           
         <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">标签</span></a>
@@ -343,10 +348,10 @@
         <a href="https://github.com/naiop" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;naiop" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
       </span>
       <span class="links-of-author-item">
-        <a href="/1596782257@qq.com" title="E-Mail → 1596782257@qq.com"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+        <a href="/myblog/1596782257@qq.com" title="E-Mail → 1596782257@qq.com"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
       </span>
       <span class="links-of-author-item">
-        <a href="https://naiop.github.io/mindex/indextools.html" title="我的工具 → https:&#x2F;&#x2F;naiop.github.io&#x2F;mindex&#x2F;indextools.html" rel="noopener" target="_blank"><i class="fab fa-google fa-fw"></i>我的工具</a>
+        <a href="https://naiop.github.io/mindex/indextools.html" title="我的工具 → https:&#x2F;&#x2F;naiop.github.io&#x2F;mindex&#x2F;indextools.html"><i class="fab fa-google fa-fw"></i>我的工具</a>
       </span>
   </div>
 
@@ -395,20 +400,20 @@
 
   
   
-  <script color='0,0,0' opacity='0.5' zIndex='-1' count='150' src="/lib/canvas-nest/canvas-nest.min.js"></script>
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
+  <script color='0,0,0' opacity='0.5' zIndex='-1' count='150' src="/myblog/lib/canvas-nest/canvas-nest.min.js"></script>
+  <script src="/myblog/lib/anime.min.js"></script>
+  <script src="/myblog/lib/velocity/velocity.min.js"></script>
+  <script src="/myblog/lib/velocity/velocity.ui.min.js"></script>
 
-<script src="/js/utils.js"></script>
+<script src="/myblog/js/utils.js"></script>
 
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/pisces.js"></script>
+<script src="/myblog/js/motion.js"></script>
 
 
-<script src="/js/next-boot.js"></script>
+<script src="/myblog/js/schemes/pisces.js"></script>
+
+
+<script src="/myblog/js/next-boot.js"></script>
 
 
 
