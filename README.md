@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="320" src="https://naiop.github.io/blog/images/favicon-16x16-next.png">
+  <img width="320" src="https://wpimg.wallstcn.com/007ef517-bafd-4066-aae4-6883632d9646">
 </p>
 
 <p align="center">
