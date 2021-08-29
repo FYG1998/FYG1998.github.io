@@ -48,23 +48,20 @@
 
 ## 简介
 
-[GitHub pages](https://naiop.github.io/) GitHub pages 可以搭建静态博客页面，展示网页作评，作者的[blog](https://naiop.github.com/blog)在线Demo。
+[GitHub pages](https://naiop.github.io/) GitHub pages 可以搭建静态博客页面，展示网页文件，作者的Blog在线[Demo](https://naiop.github.com/blog)。
 
-- [在线预览](https://naiop.github.io)
+- [在线预览Blog](https://naiop.github.io/blog)
 
-- [使用文档]()
+- [在线预览Tools](https://naiop.github.io/tools)
 
 - [Gitee]() 在线预览（国内用户可访问该地址）
-- [国内访问GitHub]() 文档（方便没翻墙的用户查看）
+- 推荐一个好用工具[国内访问GitHub](https://github.com/docmirror/dev-sidecar) 文档（方便没翻墙的用户查看）
 
 ## 前序准备
-Demo 预览
 
-- [tools工具](https://naiop.github.io)
-- [tools工具](https://naiop.github.io)
-- [tools工具](https://naiop.github.io)
-- [tools工具](https://naiop.github.io)
-- [tools工具](https://naiop.github.io)
+- **推荐一个svg图在线制作**[shields](https://img.shields.io)
+ 
+- **图片制作**[codesandbox](https://codesandbox.io/)
 
 **issue**
 
