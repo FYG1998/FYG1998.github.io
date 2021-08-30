@@ -151,6 +151,15 @@
     "desc":"免费在线制作svg",
     "tag1":"网站",
     "tag2":"在线制作"  
+    },
+    {  
+    "id":"18",
+    "url":"https://www.cmd5.com/", 
+    "ico":"md5",  
+    "title":"md,sha1 decode",    
+    "desc":"md5、sha1等全球通用公开的加密算法进行反向查询",
+    "tag1":"网站工具",
+    "tag2":"工具"  
     }
   
   
