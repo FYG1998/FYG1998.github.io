@@ -1,6 +1,6 @@
 {
    "update": "Yes",
-    "new_version": "2.0.1",
+    "new_version": "2.1.1",
     "apk_file_url": "https:raw.githubusercontent.com/xxxxx.apk",
     "update_log": "1，更新item1。\r\n2，更新item2。\r\n3，更新item3。\r\n4，更新item4。\r\n5，更新item5。",
     "target_size": "5M",
