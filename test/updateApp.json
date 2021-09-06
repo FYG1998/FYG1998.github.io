@@ -1,8 +1,8 @@
 {
    "update": "Yes",
     "new_version": "2.1.1",
-    "apk_file_url": "https://download.fastgit.org/naiop/The/releases/download/1.0.0/the.apk",
-    "update_log": "1，更新item1。\r\n2，更新item2。\r\n3，更新item3。\r\n4，更新item4。\r\n5，更新item5。",
+    "apk_file_url": "https://download.fastgit.org/naiop/The/releases/download/1.0.0/app-debug.apk",
+    "update_log": "增加在线update\r\n修复程序运行BUG\r\n优化操作体验\r\n提高传输效率",
     "target_size": "9M",
     "new_md5":"b97bea014531123f94c3ba7b7afbaad2",
     "constraint": false
