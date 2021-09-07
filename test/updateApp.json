@@ -5,5 +5,5 @@
     "update_log": "增加在线update\r\n修复程序运行BUG\r\n优化操作体验\r\n提高传输效率",
     "target_size": "9M",
     "new_md5":"b97bea014531123f94c3ba7b7afbaad2",
-    "constraint": false
+    "constraint": true
 }
